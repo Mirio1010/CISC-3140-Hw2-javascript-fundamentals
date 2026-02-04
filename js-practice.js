@@ -24,4 +24,17 @@ console.log(typeof whatever);
 /* typeof null return object which is a long known javascript bug. It should return null because null is not an object, it's a primitive value. The reason it's not updated is because it could break existing codebases. 
 */
 
+// 3. ARRAYS (15 pts)
+
+let favoriteFoods = ['pizza', 'burrito', 'chickenSalad', 'lasagna', 'steak'];
+favoriteFoods.push('fries');
+favoriteFoods.shift();
+const index = favoriteFoods.findIndex(n => n === 'steak'); 
+console.log(index);
+console.log(favoriteFoods);
+favoriteFoods = favoriteFoods.map(food => food.toUpperCase()); // map() method returns a new array.
+
+console.log(favoriteFoods);
+
+
 

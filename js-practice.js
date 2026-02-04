@@ -53,8 +53,24 @@ const {name: firstName, age : studentAge} = student; // Object Destructuring
 console.log(firstName, studentAge);
 
 
+// 5. FUNCTIONS (20 pts)
+
+function sum(num1, num2) {
+    return num1 + num2;
+}
+
+const sum2 = (num1, num2) => num1 + num2;
+
+let arr = [2, 3, 4, 10, 0, -1];
+
+const largestNum = array => Math.max(...array);  // spread operator is amazing for things like this!
+
+console.log(`largest number is this array is: ${largestNum(arr)}`);
+
+const reverseString = string =>  Array.from(string).reverse().join('');
+
+console.log(`the reverse of Miguel is: ${reverseString('Miguel')}`);
 
 
-
-
+// BONUS: Browser vs Node.js (10 pts)
 

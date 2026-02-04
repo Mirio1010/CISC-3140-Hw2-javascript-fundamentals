@@ -37,4 +37,24 @@ favoriteFoods = favoriteFoods.map(food => food.toUpperCase()); // map() method r
 console.log(favoriteFoods);
 
 
+// 4. OBJECTS (15 pts)
+
+let student = {
+    name: 'Miguel',
+    age: 22,
+    courses: ['CISC 3140', 'CISC 1001', 'CISC 1005', 'Tennis', 'PSYC 1001'],
+    isErolled: true,
+    GPA: 3.3
+}
+
+const [, secondCourse] = student.courses;  // Array Destructuring, A pretty nifty ES6+ feature.
+
+const {name: firstName, age : studentAge} = student; // Object Destructuring
+console.log(firstName, studentAge);
+
+
+
+
+
+
 
